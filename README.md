@@ -29,3 +29,7 @@ If you want to get all of this off your system now that you're done,
 - uninstall docker
 - delete the .venv directory (or all of this project)
 - uninstall poetry
+
+## credits
+
+some code and docker stuff was reused from a project I work on, [FICSIT-Fred](https://github.com/satisfactorymodding/FICSIT-Fred) 
