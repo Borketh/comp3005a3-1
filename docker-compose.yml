@@ -1,0 +1,25 @@
+services:
+    postgres:
+        image: postgres:14-alpine
+        environment:
+            POSTGRES_USER: normaluser
+            POSTGRES_PASSWORD: dbrowstastelikecoffeecrisp
+            PGDATA: /var/lib/postgresql/data/pgdata
+        ports:
+            - "5432:5432"
+        volumes:
+            - pgdata:/var/lib/postgresql/data/pgdata:z
+            - ./initdb.sql:/docker-entrypoint-initdb.d/initdb.sql
+
+    pgadmin:
+        depends_on:
+            - postgres
+        image: dpage/pgadmin4:9.9
+        environment:
+            PGADMIN_DEFAULT_EMAIL: 'me@me.ca'
+            PGADMIN_DEFAULT_PASSWORD: 'letmein' # yes I know this is unsecure I don't care it's a demo
+        ports:
+            - "8080:80"
+
+volumes:
+    pgdata:

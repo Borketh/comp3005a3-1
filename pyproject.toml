@@ -1,17 +1,23 @@
 [project]
-name = "comp3005a3-1"
+name = "comp3005a3"
 version = "0.1.0"
 description = ""
 authors = [
     {name = "borketh",email = "does.not.kompute@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.13,<4"
 dependencies = [
-    "psycopg[binary] (>=3.2.12,<4.0.0)"
+    "psycopg[binary] (>=3.2.12,<4.0.0)",
+    "sqlobject (>=3.13.0,<4.0.0)"
 ]
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "black[d] (>=25.11.0,<26.0.0)"
+]
