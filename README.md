@@ -15,6 +15,8 @@ Everything else will be taken care of by the latter two.
 
 First step: be in the directory this file is in. 
 
+Run `poetry install` to make sure we have everything the python script itself needs.
+
 To set up the database and pgAdmin (this is irrelevant but useful to me), run the `setup.sh` script.
 **You will need superuser permission** (or admin permission on windows? no idea.) unless you have set up 
 rootless docker on your system (if you don't know what that means, you haven't).
