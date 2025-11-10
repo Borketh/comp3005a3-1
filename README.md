@@ -5,7 +5,7 @@ If you see this while it's public... no you don't!
 
 ## For the TA
 
-demo vid: https://youtu.be/BKije2GTRgs
+demo vid: https://youtu.be/OFduOu0KS70
 
 Tools needed:
  
