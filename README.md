@@ -5,6 +5,8 @@ If you see this while it's public... no you don't!
 
 ## For the TA
 
+demo vid: https://youtu.be/BKije2GTRgs
+
 Tools needed:
  
 - Python 3.13
